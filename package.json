@@ -2,9 +2,12 @@
   "name": "@arbetsmyra/eslint-config-arbetsmyra",
   "version": "0.0.0",
   "description": "Arbetsmyra's shareable eslint config",
-  "main": "index.js",
+  "main": "config/base.eslintrc.js",
   "scripts": {
     "test": "exit 0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 4"
   },
   "repository": {
     "type": "git",
