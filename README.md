@@ -1,1 +1,1 @@
-# eslint-config-arbetsmyra
+# 🐜 eslint-config
