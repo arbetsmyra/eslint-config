@@ -1,6 +1,6 @@
 # [`@arbetsmyra/eslint-config`](https://github.com/arbetsmyra/eslint-config)
 
-> ESlint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs) for the [Arbetsmyra project](https://github.com/arbetsmyra).
+> Arbetsmyra's [ESLint config](https://eslint.org/docs/developer-guide/shareable-configs)
 
 ## Installation
 
