@@ -2,9 +2,10 @@
 
 Arbetsmyra's [ESLint config](https://eslint.org/docs/developer-guide/shareable-configs)
 
-![latest git version](https://img.shields.io/github/v/tag/arbetsmyra/eslint-config?label=version)
-![latest npm version](https://img.shields.io/npm/v/@arbetsmyra/eslint-config)
-![license](https://img.shields.io/github/license/arbetsmyra/eslint-config)
+[![latest git version](https://img.shields.io/github/v/tag/arbetsmyra/eslint-config?label=version)](https://github.com/arbetsmyra/eslint-config)
+[![latest npm version](https://img.shields.io/npm/v/@arbetsmyra/eslint-config)](https://www.npmjs.com/package/@arbetsmyra/eslint-config)
+[![license](https://img.shields.io/github/license/arbetsmyra/eslint-config)](https://github.com/arbetsmyra/eslint-config/blob/master/LICENSE)
+[![build status](https://travis-ci.com/arbetsmyra/eslint-config.svg?branch=master)](https://travis-ci.com/arbetsmyra/eslint-config)
 
 ## Installation
 
