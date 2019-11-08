@@ -45,6 +45,11 @@ module.exports = {
     'wrap-iife': ['error', 'outside'], // autofixable
     yoda: ['error'], // autofixable
 
+    // Category: variables
+    'no-shadow': ['error'],
+    'no-undefined': ['error'],
+    'no-use-before-define': ['error', { functions: false, classes: false }],
+
     'comma-dangle': ['error', 'always-multiline'],
     'linebreak-style': ['error', 'unix'],
     'quote-props': ['error', 'as-needed'],
