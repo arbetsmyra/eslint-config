@@ -218,5 +218,48 @@ module.exports = {
     'spaced-comment': ['error', 'always'], // Autofixable
     'switch-colon-spacing': ['error'], // Autofixable
     'wrap-regex': ['error'], // Autofixable
+
+    // Category: ecmascript 6 (es6/es2015)
+    'arrow-body-style': ['error', 'as-needed'], // Autofixable
+    'arrow-parens': ['error', 'always'], // Autofixable
+    'arrow-spacing': ['error', { before: true, after: true }], // Autofixable
+    'no-confusing-arrow': ['error'], // Autofixable
+    'no-duplicate-imports': ['error'],
+    'no-useless-computed-key': ['error'], // Autofixable
+    'no-useless-rename': ['error'], // Autofixable
+    'no-var': ['error'], // Autofixable
+    'object-shorthand': [
+      'error',
+      'always',
+      { ignoreConstructors: true, avoidExplicitReturnArrows: true },
+    ], // Autofixable
+    'prefer-const': ['error'], // Autofixable,
+    'prefer-destructuring': [
+      'error',
+      {
+        array: true,
+        object: true,
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ], // Autofixable,
+    'prefer-template': ['error'], // Autofixable
+    'rest-spread-spacing': ['error', 'never'], // Autofixable
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: true,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: [
+          'none',
+          'all',
+          'multiple',
+          'single',
+        ],
+      },
+    ], // Autofixable
+    'template-curly-spacing': ['error', 'always'], // Autofixable
   },
 };
