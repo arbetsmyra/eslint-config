@@ -1,3 +1,5 @@
 .eslintrc.js
 .gitignore
 *.code-workspace
+.github
+renovate.json

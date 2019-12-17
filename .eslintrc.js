@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./config/base.eslintrc.js']
+  extends: ['./config/default.js']
 };

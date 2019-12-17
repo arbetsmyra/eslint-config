@@ -1,12 +1,14 @@
 {
-	"folders": [
-		{
-			"name": "Arbetsmyra's ESLint config",
-			"path": "."
-		}
-	],
-	"settings": {
-		"eslint.alwaysShowStatus": true,
-		"eslint.autoFixOnSave": true
-	}
+  "folders": [
+    {
+      "name": "Arbetsmyra's ESLint config",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  }
 }
