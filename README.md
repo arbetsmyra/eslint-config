@@ -45,7 +45,7 @@ To only use "other" rules you can extend the `@arbetsmyra/eslint-config/config/o
 }
 ```
 
-Using the `@arbetsmyra` config with other [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs).
+Using the `@arbetsmyra/eslint-config` config with other [shareable configs](https://eslint.org/docs/developer-guide/shareable-configs).
 
 ```js
 {
