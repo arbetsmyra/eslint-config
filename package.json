@@ -2,14 +2,14 @@
   "name": "@arbetsmyra/eslint-config",
   "version": "0.5.0",
   "description": "Arbetsmyra's ESLint config",
-  "main": "config/base.eslintrc.js",
+  "main": "./config/default.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run lint"
   },
   "peerDependencies": {
-    "eslint": ">= 4"
+    "eslint": ">=4"
   },
   "devDependencies": {
     "eslint": "6.7.2"

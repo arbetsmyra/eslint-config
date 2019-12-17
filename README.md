@@ -19,11 +19,29 @@ npm install --save-dev eslint @arbetsmyra/eslint-config
 
 ## Usage
 
-Once the `@arbetsmyra/eslint-config` package is installed, you can use it by specifying the `@arbetsmyra` config in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
+Once the `@arbetsmyra/eslint-config` package is installed, you can use it by specifying the `@arbetsmyra/eslint-config` config for the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) property in the [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
 
 ```js
 {
-  'extends': '@arbetsmyra'
+  'extends': ['@arbetsmyra/eslint-config']
+}
+```
+
+By default all rules will be used.
+
+To only use "autofixable" rules you can extend the `@arbetsmyra/eslint-config/config/autofixable` config.
+
+```js
+{
+  'extends': ['@arbetsmyra/eslint-config/config/autofixable']
+}
+```
+
+To only use "other" rules you can extend the `@arbetsmyra/eslint-config/config/other` config.
+
+```js
+{
+  'extends': ['@arbetsmyra/eslint-config/config/other']
 }
 ```
 
@@ -33,7 +51,7 @@ Using the `@arbetsmyra` config with other [shareable configs](https://eslint.org
 {
   'extends': [
     // other shareable configs
-    '@arbetsmyra'
+    '@arbetsmyra/eslint-config'
   ]
 }
 ```
