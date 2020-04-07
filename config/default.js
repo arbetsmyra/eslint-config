@@ -7,11 +7,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    './autofixable',
-    './other',
-  ],
+  extends: ['eslint:recommended', './autofixable', './other'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -21,4 +17,3 @@ module.exports = {
     sourceType: 'module',
   },
 };
-

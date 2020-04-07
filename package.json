@@ -4,15 +4,11 @@
   "description": "Arbetsmyra's ESLint config",
   "main": "./config/default.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "test": "npm run lint"
-  },
-  "peerDependencies": {
-    "eslint": ">=4"
-  },
-  "devDependencies": {
-    "eslint": "6.8.0"
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "eslint": "eslint .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "test": "npm run eslint && npm run prettier:check"
   },
   "repository": {
     "type": "git",
@@ -28,5 +24,19 @@
   "bugs": {
     "url": "https://github.com/arbetsmyra/eslint-config/issues"
   },
-  "homepage": "https://github.com/arbetsmyra/eslint-config#readme"
+  "homepage": "https://github.com/arbetsmyra/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": ">=4"
+  },
+  "devDependencies": {
+    "@arbetsmyra/prettier-config": "^1.0.3",
+    "eslint": "6.8.0",
+    "prettier": "^2.0.4"
+  },
+  "prettier": "@arbetsmyra/prettier-config",
+  "renovate": {
+    "extends": [
+      "@arbetsmyra"
+    ]
+  }
 }

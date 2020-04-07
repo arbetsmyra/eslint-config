@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./config/default.js']
+  extends: ['./config/default.js'],
 };

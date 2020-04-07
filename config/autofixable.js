@@ -14,17 +14,17 @@ module.exports = {
   },
   rules: {
     // Category: best practices
-    curly: ['error'], // Autofixable
-    'dot-notation': 'error', // Autofixable
-    eqeqeq: ['error', 'always'], // Autofixable
+    curly: ['error'],
+    'dot-notation': 'error',
+    eqeqeq: ['error', 'always'],
     'max-classes-per-file': ['error', 1],
-    'no-else-return': ['error'], // Autofixable
-    'no-floating-decimal': ['error'], // Autofixable
-    'no-implicit-coercion': ['error'], // Autofixable
-    'no-multi-spaces': ['error'], // Autofixable
-    'no-unused-labels': ['error'], // Autofixable
-    'wrap-iife': ['error', 'outside'], // Autofixable
-    yoda: ['error'], // Autofixable
+    'no-else-return': ['error'],
+    'no-floating-decimal': ['error'],
+    'no-implicit-coercion': ['error'],
+    'no-multi-spaces': ['error'],
+    'no-unused-labels': ['error'],
+    'wrap-iife': ['error', 'outside'],
+    yoda: ['error'],
 
     // Category: stylistic
     'array-bracket-newline': [
@@ -32,49 +32,49 @@ module.exports = {
       {
         multiline: true,
       },
-    ], // Autofixable
+    ],
     'array-bracket-spacing': [
       'error',
       'never',
       {
         arraysInArrays: false,
       },
-    ], // Autofixable
+    ],
     'array-element-newline': [
       'error',
       {
         multiline: true,
-        minItems: 3,
+        minItems: 5,
       },
-    ], // Autofixable
-    'block-spacing': ['error'], // Autofixable
-    'brace-style': ['error'], // Autofixable
-    'capitalized-comments': ['error', 'always'], // Autofixable
-    'comma-dangle': ['error', 'always-multiline'], // Autofixable
-    'computed-property-spacing': ['error', 'never'], // Autofixable
-    'eol-last': ['error', 'always'], // Autofixable
-    'func-call-spacing': ['error', 'never'], // Autofixable
-    'function-call-argument-newline': ['error', 'consistent'], // Autofixable
-    'function-paren-newline': ['error', 'multiline'], // Autofixable
-    indent: ['error', 2], // Autofixable
-    'jsx-quotes': ['error', 'prefer-double'], // Autofixable
+    ],
+    'block-spacing': ['error'],
+    'brace-style': ['error'],
+    'capitalized-comments': ['error', 'always'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'computed-property-spacing': ['error', 'never'],
+    'eol-last': ['error', 'always'],
+    'func-call-spacing': ['error', 'never'],
+    'function-call-argument-newline': ['error', 'consistent'],
+    'function-paren-newline': ['error', 'multiline'],
+    indent: ['error', 2],
+    'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': [
       'error',
       {
         beforeColon: false,
       },
-    ], // Autofixable
-    'linebreak-style': ['error', 'unix'], // Autofixable
-    'lines-between-class-members': ['error', 'always'], // Autofixable
-    'multiline-comment-style': ['error', 'starred-block'], // Autofixable
-    'new-parens': ['error'], // Autofixable
+    ],
+    'linebreak-style': ['error', 'unix'],
+    'lines-between-class-members': ['error', 'always'],
+    'multiline-comment-style': ['error', 'starred-block'],
+    'new-parens': ['error'],
     'newline-per-chained-call': [
       'error',
       {
         ignoreChainWithDepth: 2,
       },
-    ], // Autofixable
-    'no-lonely-if': ['error'], // Autofixable
+    ],
+    'no-lonely-if': ['error'],
     'no-multiple-empty-lines': [
       'error',
       {
@@ -82,52 +82,36 @@ module.exports = {
         maxEOF: 1,
         maxBOF: 0,
       },
-    ], // Autofixable
-    'no-trailing-spaces': ['error'], // Autofixable
-    'no-unneeded-ternary': ['error'], // Autofixable
-    'no-whitespace-before-property': ['error'], // Autofixable
-    'object-curly-spacing': ['error', 'always'], // Autofixable
+    ],
+    'no-trailing-spaces': ['error'],
+    'no-unneeded-ternary': ['error'],
+    'no-whitespace-before-property': ['error'],
+    'object-curly-spacing': ['error', 'always'],
     'object-property-newline': [
       'error',
       {
         allowAllPropertiesOnSameLine: true,
       },
-    ], // Autofixable
-    'one-var': ['error', 'never'], // Autofixable
-    'operator-assignment': ['error', 'always'], // Autofixable
-    'operator-linebreak': ['error', 'after'], // Autofixable
-    'padded-blocks': ['error', 'never'], // Autofixable
+    ],
+    'one-var': ['error', 'never'],
+    'operator-assignment': ['error', 'always'],
+    'operator-linebreak': ['error', 'after'],
+    'padded-blocks': ['error', 'never'],
     'padding-line-between-statements': [
       'error',
       {
         blankLine: 'always',
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
+        prev: ['const', 'let', 'var'],
         next: '*',
       },
       {
         blankLine: 'any',
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
-        next: [
-          'const',
-          'let',
-          'var',
-        ],
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var'],
       },
       {
         blankLine: 'always',
-        prev: [
-          'const',
-          'let',
-          'var',
-        ],
+        prev: ['const', 'let', 'var'],
         next: 'return',
       },
       {
@@ -135,18 +119,14 @@ module.exports = {
         prev: 'import',
         next: 'import',
       },
-    ], // Autofixable
-    'prefer-object-spread': ['error'], // Autofixable
-    'quote-props': ['error', 'as-needed'], // Autofixable
-    quotes: [
-      'error',
-      'single',
-      { avoidEscape: true },
-    ], // Autofixable
-    semi: ['error', 'always'], // Autofixable
-    'semi-spacing': ['error'], // Autofixable
-    'semi-style': ['error', 'last'], // Autofixable
-    'space-before-blocks': ['error'], // Autofixable
+    ],
+    'prefer-object-spread': ['error'],
+    'quote-props': ['error', 'as-needed'],
+    quotes: ['error', 'single', { avoidEscape: true }],
+    semi: ['error', 'always'],
+    'semi-spacing': ['error'],
+    'semi-style': ['error', 'last'],
+    'space-before-blocks': ['error'],
     'space-before-function-paren': [
       'error',
       {
@@ -154,29 +134,25 @@ module.exports = {
         asyncArrow: 'always',
         named: 'never',
       },
-    ], // Autofixable
-    'space-in-parens': ['error', 'never'], // Autofixable
-    'space-infix-ops': ['error'], // Autofixable
-    'space-unary-ops': ['error', { words: true, nonwords: false }], // Autofixable
-    'spaced-comment': ['error', 'always'], // Autofixable
-    'switch-colon-spacing': ['error'], // Autofixable
-    'wrap-regex': ['error'], // Autofixable
+    ],
+    'space-in-parens': ['error', 'never'],
+    'space-infix-ops': ['error'],
+    'space-unary-ops': ['error', { words: true, nonwords: false }],
+    'spaced-comment': ['error', 'always'],
+    'switch-colon-spacing': ['error'],
+    'wrap-regex': ['error'],
 
     // Category: ecmascript 6 (es6/es2015)
-    'arrow-body-style': ['error', 'as-needed'], // Autofixable
-    'arrow-parens': ['error', 'always'], // Autofixable
-    'arrow-spacing': ['error', { before: true, after: true }], // Autofixable
-    'no-confusing-arrow': ['error'], // Autofixable
+    'arrow-body-style': ['error', 'as-needed'],
+    'arrow-parens': ['error', 'always'],
+    'arrow-spacing': ['error', { before: true, after: true }],
+    'no-confusing-arrow': ['error'],
     'no-duplicate-imports': ['error'],
-    'no-useless-computed-key': ['error'], // Autofixable
-    'no-useless-rename': ['error'], // Autofixable
-    'no-var': ['error'], // Autofixable
-    'object-shorthand': [
-      'error',
-      'always',
-      { ignoreConstructors: true, avoidExplicitReturnArrows: true },
-    ], // Autofixable
-    'prefer-const': ['error'], // Autofixable,
+    'no-useless-computed-key': ['error'],
+    'no-useless-rename': ['error'],
+    'no-var': ['error'],
+    'object-shorthand': ['error', 'always', { ignoreConstructors: true, avoidExplicitReturnArrows: true }],
+    'prefer-const': ['error'],
     'prefer-destructuring': [
       'error',
       {
@@ -186,23 +162,18 @@ module.exports = {
       {
         enforceForRenamedProperties: false,
       },
-    ], // Autofixable,
-    'prefer-template': ['error'], // Autofixable
-    'rest-spread-spacing': ['error', 'never'], // Autofixable
+    ],
+    'prefer-template': ['error'],
+    'rest-spread-spacing': ['error', 'never'],
     'sort-imports': [
       'error',
       {
         ignoreCase: true,
         ignoreDeclarationSort: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: [
-          'none',
-          'all',
-          'multiple',
-          'single',
-        ],
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
       },
-    ], // Autofixable
-    'template-curly-spacing': ['error', 'always'], // Autofixable
+    ],
+    'template-curly-spacing': ['error', 'always'],
   },
 };
