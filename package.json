@@ -29,7 +29,7 @@
     "eslint": ">=4"
   },
   "devDependencies": {
-    "@arbetsmyra/prettier-config": "1.2.0",
+    "@arbetsmyra/prettier-config": "1.2.1",
     "eslint": "7.9.0",
     "prettier": "2.1.1"
   },
